@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#carousel .img {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-item::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.underline {
+    border: 2px solid #f39c12;
+    width: 200px;
+}
+
+#Profile {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#program {
+    background-color: white;
+}
+
+.visi img {
+    width: 200px;
+    height: 200px;
+}
+
+.visi .card {
+    width: 340px;
+    height: auto;
+}
+
+.card {
+    height: 430px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.64);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    filter: brightness(.9);
+    transition: all ease-in-out .3s;
+}
+
+.card img {
+    height: 220px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 500; 
+}
+
+.card-footer a:hover {
+    filter: brightness(.8);
+}
+
+.sosmed img{
+    width: 36px;
+    height: 36px;
+    margin: 10px;
+}
+
+.sosmed p {
+    font-weight: 500;
+    width: 700px;
+    color: #322f2fc0;
+}
+
+#sejarah {
+    margin-top: 25px;
+}
+
+#sejarah img {
+    width: 400px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.paragraf {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+
+
+#pendidik {
+    height: 500px;
+}
+
+.galery-item {
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+.galery-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    color: #fcb941;
+}
+
+.galery-img:hover .btns {
+    bottom: 0;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.galery-type {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.galery-name {
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.galery-name:hover {
+    color: #fcb941 !important;
+}
+
+.rating {
+    font-size: 13px;
+}
+
+.galery-item {
+    width: 345px;
+    margin-top: 30px;
+}
+
+@media (min-width: 280px) and  (max-width: 1024px) {
+    .navbar-logo {
+        visibility: hidden;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        display: block;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    .hero p, h2 {
+        margin-right: 30px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .hero a {
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    .card {
+        margin-left: 20px;
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .card img {
+        height: 220px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #maps {
+        margin-top: 20px;
+    }
+
+    .sosmed p {
+        font-weight: 500;
+        width: 330px;
+    }   
+
+    .sosmed img{
+        width: 32px;
+        height: 32px;
+        margin: 10px;
+    }
+   
+    .product-item {
+        width: 350px;
+    }
+
+}
