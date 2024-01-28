@@ -11,6 +11,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
 
 #carousel .img {
     width: 100%;
@@ -126,7 +129,7 @@ body {
 }
 
 .galery-item {
-    border: 2px solid rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219);
     border-radius: 10px;
 }
 
@@ -189,7 +192,13 @@ body {
     margin-top: 30px;
 }
 
-@media (min-width: 280px) and  (max-width: 1024px) {
+#view img {
+    width: 400px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+@media (min-width: 267px) and  (max-width: 1024px) {
     .navbar-logo {
         visibility: hidden;
     }
@@ -213,7 +222,7 @@ body {
     }
 
     .hero p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .hero a {
@@ -249,8 +258,12 @@ body {
         margin: 10px;
     }
    
-    .product-item {
+    .galery-item {
         width: 350px;
+    }
+
+    #visimisi .card-text {
+        font-size: 12px;
     }
 
 }
